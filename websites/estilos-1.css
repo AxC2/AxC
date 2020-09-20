@@ -1,0 +1,107 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: open sans;
+}
+
+body{
+	margin-top: 100px;
+}
+
+/* Selection */
+
+h1::selection, h2::selection, p::selection, a::selection, b::selection, img::selection{
+	background: #303030;
+	color: #f2f2f2;
+}
+
+.titulo{
+	display: flex;
+	justify-content: space-between;
+	background: #060E37;
+	position: fixed;
+	width: 100%;
+	margin-top: -100px;
+}
+
+.titulo__user{
+	display: flex;
+	position: relative;
+	left: 30px;
+	top: 11px;
+	color: white;
+
+}
+
+.titulo__user i{
+	color: white;
+	padding-right: 20px;
+	position: relative;
+	top: 14px;
+}
+
+.titulo__tema{
+	padding: 10px 0;
+	color: white;
+}
+.titulo__nav{
+	padding: 20px 30px;
+}
+
+.titulo__nav a{
+	padding: 5px 20px;
+	color: gold;
+	text-decoration: none;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+}
+
+.titulo__nav a:hover{
+	background: white;
+}
+
+.definicion__article{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/* */
+
+.definicion h2{
+	width: 116px;
+	margin: 80px auto;
+	color: #03071e; 
+}
+.definicion__article--parrafo{
+	width: 400px;
+}
+
+#personalidad{
+	color: #060E37;
+	border-bottom: 1px solid #ccc;
+}
+.definicion__article img{
+	width: 200px;
+	height: 200px;
+}
+
+/* Que estudia? */
+
+.que-estudia{
+
+}
+.que-estudia h2{
+	width: 545px;
+	margin: 80px auto;
+	color: #060E37;
+}
+
+.que-estudia__contenido{
+	width: 600px;
+	height: 400px;
+	margin: 60px auto;
+	box-shadow: 0 0 10px black;
+	padding: 15px;
+	overflow: auto;
+}
