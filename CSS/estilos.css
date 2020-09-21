@@ -7,8 +7,8 @@
 /* Selection */
 
 h1::selection, h2::selection, h4::selection, p::selection, a::selection, b::selection, img::selection{
-	background: #151515;
-	color: #f2f2f2;
+	background: skyblue;
+	color: #000;
 	opacity: 0.50;
 }
 
@@ -20,9 +20,9 @@ h1::selection, h2::selection, h4::selection, p::selection, a::selection, b::sele
     background: #c31432;  
     background: #00d2ff;  
  	/* fallback for old browsers */
- 	background: -webkit-linear-gradient(to right, hsla(240, 62%, 22%, 0.671), hsla(214, 95%, 22%, 0.671)), url('../portada.jpg');  
+ 	background: -webkit-linear-gradient(to right, hsla(240, 62%, 22%, 0.671), hsla(214, 95%, 22%, 0.671)), url('https://images.pexels.com/photos/4065133/pexels-photo-4065133.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');  
  	/* Chrome 10-25, Safari 5.1-6 */
- 	background: linear-gradient(to right, hsla(240, 62%, 22%, 0.671), hsla(214, 95%, 22%, 0.671)), url('../portada.jpg');  
+ 	background: linear-gradient(to right, hsla(240, 62%, 22%, 0.671), hsla(214, 95%, 22%, 0.671)), url('https://images.pexels.com/photos/4065133/pexels-photo-4065133.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');  
  	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     background-size: cover;

@@ -12,8 +12,8 @@ body{
 /* Selection */
 
 h1::selection, h2::selection, p::selection, a::selection, b::selection, img::selection{
-	background: #303030;
-	color: #f2f2f2;
+	background: lightblue;
+	color: #303030;
 }
 
 .titulo{
@@ -23,6 +23,7 @@ h1::selection, h2::selection, p::selection, a::selection, b::selection, img::sel
 	position: fixed;
 	width: 100%;
 	margin-top: -100px;
+	z-index: 1;
 }
 
 .titulo__user{
@@ -41,6 +42,20 @@ h1::selection, h2::selection, p::selection, a::selection, b::selection, img::sel
 	top: 14px;
 }
 
+#a{
+	background: crimson;
+	padding: 0 2px;
+}
+#x{
+	background: white;
+	color: crimson;
+	padding: 0 2px;
+}
+#c{
+	background: crimson;
+	padding: 0 2px;
+}
+
 .titulo__tema{
 	padding: 10px 0;
 	color: white;
@@ -55,10 +70,14 @@ h1::selection, h2::selection, p::selection, a::selection, b::selection, img::sel
 	text-decoration: none;
 	border-left: 1px solid white;
 	border-right: 1px solid white;
+	border-radius: 15px 15px 15px 15px;
+
 }
 
 .titulo__nav a:hover{
 	background: white;
+	border-radius: 15px 15px 15px 15px;
+	color: #060E37;
 }
 
 .definicion__article{
@@ -69,39 +88,308 @@ h1::selection, h2::selection, p::selection, a::selection, b::selection, img::sel
 /* */
 
 .definicion h2{
-	width: 116px;
+	width: 146px;
 	margin: 80px auto;
-	color: #03071e; 
+	color: #060E50;
+	box-shadow: 0 0 10px black;
+	padding: 15px; 
 }
 .definicion__article--parrafo{
 	width: 400px;
+	margin: auto 0;
+}
+
+.definicion__article--parrafo p::first-letter{
+	color: #fff;
+	background: #030730;
+	padding: 0 4px;
+	font-size: 20px;
 }
 
 #personalidad{
-	color: #060E37;
-	border-bottom: 1px solid #ccc;
+	color: #031680;
+	border-bottom: 1px solid #000;
 }
-.definicion__article img{
+
+.definicion__article--img{
 	width: 200px;
 	height: 200px;
+	margin: auto 0;
 }
 
 /* Que estudia? */
 
 .que-estudia{
+	margin: 120px 0;
 
 }
 .que-estudia h2{
 	width: 545px;
 	margin: 80px auto;
-	color: #060E37;
+	color: #060E50;
 }
 
 .que-estudia__contenido{
-	width: 600px;
+	width: 720px;
 	height: 400px;
 	margin: 60px auto;
 	box-shadow: 0 0 10px black;
-	padding: 15px;
+	padding: 10px 100px;
 	overflow: auto;
 }
+
+.bb{
+	color: #031680;
+}
+
+.bbb{
+	color: #0058cc;
+	border-bottom: 1px solid black; 
+}
+
+/* Investigadores de la Psicología Social */
+
+.investigadores{
+	margin: 100px 0;
+}
+.investigadores h2{
+	text-align: center;
+	color: #060E50;
+}
+
+.investigadores p{
+	text-align: center;
+}
+
+.investigadores__contenedor{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 80px 0;
+}
+
+.investigadores__contenedor--a{
+	width: 510px;
+}
+
+.investigadores__contenedor--a h3{
+	text-align: center;
+}
+
+.investigadores__aug{
+	margin: 20px 0;
+
+}
+
+.investigadores__aug img{
+	position: relative;
+	left: 100px;
+	height: 215px;
+}
+.investigadores__aug p{
+	text-align: justify;
+
+}
+.investigadores__contenedor--b{
+	width: 510px;
+}
+
+.investigadores__contenedor--b h3{
+	text-align: center;
+}
+
+.investigadores__contenedor--b p{
+	text-align: justify;
+}
+
+.investigadores__bio{
+	display: flex;
+	margin: 20px 0 0 0;
+}
+
+.investigadores__bio img{
+	width: 200px;
+	height: 300px;
+	margin: auto;
+}
+
+.investigadores__bio p{
+	margin-left: 20px;
+	text-align: justify;
+}
+
+/* Los padres fundadores de la psicología social */
+
+.fundadores h3{
+	text-align: center;
+}
+
+.fundadores p{
+	width: 800px;
+	margin: auto;
+}
+
+.fundadores__kurt{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 20px 0;
+}
+
+.fundadores__kurt img{
+		margin: auto;
+}
+
+.fundadores__kurt p{
+		text-align: justify;
+		width: 600px;
+}
+
+/* */
+
+.a{
+	background: #f2f2f2;
+	padding: 20px;
+}
+.a h2{
+	width: 370px;
+	margin: 30px auto;
+	padding: 15px;
+	box-shadow: 0 0 10px black;
+	color: #060E50;
+}
+
+.a__p{
+	width: 700px;
+	margin: 30px auto;
+	text-align: center
+}
+
+.a__cajas{
+	width: 810px;
+	height: 510px;
+	margin: 60px auto;
+	position: relative;
+}
+
+.a__cajas--1, .a__cajas--2, .a__cajas--3, .a__cajas--4, .a__cajas--5{
+	position: absolute;
+}
+
+.a__cajas--1 h3, .a__cajas--2 h3, .a__cajas--3 h3, .a__cajas--4 h3{
+	border: 2px solid #000b42;
+	text-align: center;
+	padding: 5px;
+	color: crimson;
+}
+
+.a__cajas--1 p, .a__cajas--2 p, .a__cajas--3 p, .a__cajas--4 p{
+	border: 2px solid #000b42;
+	width: 400px;
+	padding: 15px;
+	text-align: justify;
+}
+
+.a__cajas--5 h3{
+
+}
+
+.a__cajas--1{
+
+}
+.a__cajas--2{
+	right: 0;
+}
+.a__cajas--3{
+	bottom: 0;
+}
+.a__cajas--4{
+	right: 0;
+	bottom: 0;
+}
+
+.a__cajas--5{
+	right: 120px;
+	top: 230px;
+}
+
+/* */
+
+span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: crimson;
+	text-align: center;
+	border-radius: 50%;
+	color: white;
+	margin-right: 10px;
+}
+
+.experimentos{
+	margin: 100px 0;
+}
+
+.experimentos h2{
+	text-align: center;
+	color: #060E50;
+}
+
+.experimentos p{
+	text-align: center;
+}
+.contenedor-experimentos{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 60px 0;
+}
+
+.contenedor-experimentos__1{
+	width: 400px;
+	box-shadow: 0 0 8px 2px #060E50;
+	padding: 20px;
+}
+
+.contenedor-experimentos__1 h4{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.contenedor-experimentos__2{
+	width: 400px;
+	box-shadow: 0 0 8px 2px crimson;
+	padding: 20px;
+	height: 200px;
+}
+
+.contenedor-experimentos__2 h4{
+	margin-bottom: 5px;
+}
+
+.contenedor-experimentos__3{
+	width: 400px;
+	box-shadow: 0 0 8px 2px #060E50;
+	padding: 20px;
+}
+.contenedor-experimentos__3 h4{
+	text-align: center;
+}
+.contenedor-experimentos__3 p{
+	margin-top: 20px;
+}
+
+.bibliograficas h4{
+	text-align: center;
+	color: #060E50;
+	padding: 30px;
+	font-size: 25px;
+}
+.bibliograficas ul{
+	width: 500px;
+	margin: auto;
+	background: crimson;
+	padding: 60px;
+}
+
+.bibliograficas li{
+	color: #f2f2f2;
+}
+
